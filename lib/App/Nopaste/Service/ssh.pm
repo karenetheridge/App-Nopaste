@@ -27,7 +27,7 @@ sub run {
     my $suffix = $ext;
     if ($usedesc) {
         if (not $args{'desc'}) {
-            my ($vol, $dirs, $file) = File::Spec->splitpath($source);
+            my $file = ( File::Spec->splitpath($source) )[2];
             $args{'desc'} = $file || '';
         }
         $args{'desc'} =~ s/\s+/+/g; # more readable than %20
@@ -52,7 +52,7 @@ sub run {
 
     system('scp', '-pq', $filename, "$server:$docroot");
 
-    my ($volume, $dir, $file) = File::Spec->splitpath($filename);
+    my $file = ( File::Spec->splitpath($filename) )[2];
     $file = uri_escape($file);
     $file =~ s/%2b/+/gi;
 
