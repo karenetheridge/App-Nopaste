@@ -83,6 +83,8 @@ __END__
 
 =pod
 
+=for stopwords nopaste pastebin
+
 =head1 NAME
 
 App::Nopaste - easy access to any pastebin

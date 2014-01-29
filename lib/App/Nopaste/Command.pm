@@ -144,6 +144,8 @@ __END__
 
 =pod
 
+=for stopwords chan desc lang nopaste pastebot
+
 =head1 NAME
 
 App::Nopaste::Command - command-line utility for L<App::Nopaste>

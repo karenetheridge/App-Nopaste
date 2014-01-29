@@ -64,6 +64,8 @@ __END__
 
 =pod
 
+=for stopwords dir
+
 =head1 NAME
 
 App::Nopaste::Service::ssh - copies files to your server using scp
