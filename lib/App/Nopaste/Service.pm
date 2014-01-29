@@ -95,6 +95,8 @@ __END__
 
 =pod
 
+=for stopwords pastebot XXX chan desc lang mech nopaste
+
 =head1 NAME
 
 App::Nopaste::Service - base class for nopaste services
