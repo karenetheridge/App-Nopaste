@@ -236,6 +236,8 @@ __END__
 
 =pod
 
+=for stopwords Niebur
+
 =head1 NAME
 
 App::Nopaste::Service::Ubuntu - http://paste.ubuntu.com/

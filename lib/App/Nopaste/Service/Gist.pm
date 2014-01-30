@@ -143,6 +143,8 @@ __END__
 
 =pod
 
+=for stopwords SIGNES gists oauth
+
 =head1 NAME
 
 App::Nopaste::Service::Gist - http://gist.github.com/
