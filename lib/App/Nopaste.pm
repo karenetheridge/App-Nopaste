@@ -87,7 +87,7 @@ __END__
 
 =head1 NAME
 
-App::Nopaste - easy access to any pastebin
+App::Nopaste - Easy access to any pastebin
 
 =head1 SYNOPSIS
 
