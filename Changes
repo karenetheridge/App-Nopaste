@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.97    2014-11-16 19:29:13Z
         - switched the JSON backend in the Gist plugin from JSON.pm to
           JSON::MaybeXS
 
