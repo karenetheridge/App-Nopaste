@@ -75,7 +75,7 @@ sub _get_auth {
 
     die join("\n",
         "Export GITHUB_OAUTH_TOKEN first. For example:",
-        "    perl -Ilib -MApp::Nopaste::Service::Gist -e 'App::Nopaste::Service::Gist->create_token'",
+        "    perl -MApp::Nopaste::Service::Gist -e 'App::Nopaste::Service::Gist->create_token'",
         "",
         "OR you can export GITHUB_USER and GITHUB_PASSWORD.",
     ) . "\n";
