@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - switched the JSON backend in the Gist plugin from JSON.pm to
+          JSON::MaybeXS
 
 0.96    2014-01-29 03:24:58Z
         - added missing prereqs

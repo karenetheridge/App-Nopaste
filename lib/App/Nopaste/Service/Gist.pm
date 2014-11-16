@@ -5,7 +5,7 @@ package App::Nopaste::Service::Gist;
 use base 'App::Nopaste::Service';
 
 use File::Basename ();
-use JSON ();
+use JSON::MaybeXS;
 use Module::Runtime 'use_module';
 use namespace::clean;
 
@@ -36,7 +36,7 @@ sub run {
         }
     };
 
-    $content = JSON::encode_json($content);
+    $content = encode_json($content);
 
     my %auth = $self->_get_auth;
 
@@ -104,11 +104,11 @@ sub create_token {
 
     my $request = HTTP::Request->new(POST => 'https://api.github.com/authorizations');
     $request->authorization_basic($username, $password);
-    $request->content(JSON::encode_json($parameters));
+    $request->content(encode_json($parameters));
 
     my $response = $ua->request($request);
 
-    my $response_content = JSON::decode_json($response->decoded_content);
+    my $response_content = decode_json($response->decoded_content);
 
     if ($response_content->{token} ) {
         print "GITHUB_OAUTH_TOKEN=$response_content->{token}\n";
@@ -133,7 +133,7 @@ sub return {
       return (0, "LWP Error: " . $res->content);
     }
 
-    my $id = JSON::decode_json($res->content)->{id};
+    my $id = decode_json($res->content)->{id};
 
     return (0, "Could not find paste link.") if !$id;
     return (1, "http://gist.github.com/$id");
