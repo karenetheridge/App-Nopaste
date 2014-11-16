@@ -7,6 +7,7 @@ use base 'App::Nopaste::Service';
 use File::Basename ();
 use JSON ();
 use Module::Runtime 'use_module';
+use namespace::clean;
 
 sub available         { 1 }
 sub forbid_in_default { 0 }

@@ -4,6 +4,7 @@ package App::Nopaste::Service::PastebinCom;
 
 use base 'App::Nopaste::Service';
 use Module::Runtime 'use_module';
+use namespace::clean;
 
 sub available {
     eval { use_module('WWW::Pastebin::PastebinCom::Create'); 1 }

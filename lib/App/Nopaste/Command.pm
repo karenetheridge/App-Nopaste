@@ -6,6 +6,7 @@ use Getopt::Long::Descriptive ();
 
 use App::Nopaste;
 use Module::Runtime 'use_module';
+use namespace::clean;
 
 sub new_with_options {
     my $class = shift;
