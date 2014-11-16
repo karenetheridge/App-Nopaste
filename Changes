@@ -2,18 +2,18 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
-0.96      2014-01-29 03:24:58Z
+0.96    2014-01-29 03:24:58Z
         - added missing prereqs
 
-0.95      2014-01-26 17:41:29Z
+0.95    2014-01-26 17:41:29Z
         - bumped the minimum version needed for the (optional) prerequisite
           WWW::Pastebin::PastebinCom::Create, to avoid errors in previous
           versions (thanks, Zoffix!)
 
-0.94      2014-01-18 22:13:29Z
+0.94    2014-01-18 22:13:29Z
         - updated and fixed debian and ubuntu language mappings (haarg, PR#1)
 
-0.93      2014-01-14 00:41:21Z
+0.93    2014-01-14 00:41:21Z
         - packaging converted to Dist::Zilla; handling of optional features
           fixed (see RT#91053)
 
