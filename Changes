@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - make install prompts a bit more intelligible
 
 0.97    2014-11-16 19:29:13Z
         - switched the JSON backend in the Gist plugin from JSON.pm to
