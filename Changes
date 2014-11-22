@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.98    2014-11-22 07:45:48Z
         - make install prompts a bit more intelligible
 
 0.97    2014-11-16 19:29:13Z
