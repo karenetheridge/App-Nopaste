@@ -136,7 +136,7 @@ sub return {
     my $id = decode_json($res->content)->{id};
 
     return (0, "Could not find paste link.") if !$id;
-    return (1, "http://gist.github.com/$id");
+    return (1, "https://gist.github.com/$id");
 }
 
 1;
