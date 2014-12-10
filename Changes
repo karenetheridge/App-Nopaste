@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - gist URLs now use HTTPS (thanks, Darian Anthony Patrick!)
 
 0.98    2014-11-22 07:45:48Z
         - make install prompts a bit more intelligible
