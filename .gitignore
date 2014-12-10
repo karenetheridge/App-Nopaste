@@ -1,3 +1,6 @@
+/.ackrc
 /.build/
+!/.gitignore
+/.latest
 /App-Nopaste-*/
 /App-Nopaste-*.tar.gz
