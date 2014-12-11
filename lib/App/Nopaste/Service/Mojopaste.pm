@@ -11,6 +11,14 @@ sub fill_form {
     my $mech = shift;
     my %args = @_;
 
+    # Hack around bot protection
+    my $form = $mech->form_number(1);
+    my $action = $form->action;
+    if ($action =~ m{/invalid$}) {
+       $action =~ s{/invalid$}{};
+       $form->action($action);
+    }
+
     $mech->submit_form(
         fields        => {
             p       => 1,
