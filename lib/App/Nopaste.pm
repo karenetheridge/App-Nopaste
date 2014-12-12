@@ -5,7 +5,7 @@ package App::Nopaste;
 use 5.008003;
 use Module::Pluggable search_path => 'App::Nopaste::Service', sub_name => '_plugins';
 use Class::Load 'load_class';
-use namespace::clean;
+use namespace::clean -except => [qw( plugins )];
 
 use base 'Exporter';
 our @EXPORT_OK = 'nopaste';
