@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+1.000   2014-12-12 03:25:40Z
         - fix the accidental loss of the plugins() method in 0.97 (thanks,
           Dean Hamstead!)
 
