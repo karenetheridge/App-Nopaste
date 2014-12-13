@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 use Test::More;
+use Test::Deep;
 
 {
     package App::Nopaste::Service::_MyTest;
@@ -22,12 +23,12 @@ use Test::More;
     sub read_text { 'test' }
 }
 
-is_deeply(
-    [ sort App::Nopaste->plugins ],
-    [
+cmp_deeply(
+    [ App::Nopaste->plugins ],
+    superbagof(
         map { 'App::Nopaste::Service::' . $_ }
             qw(Codepeek Debian Gist PastebinCom Pastie Shadowcat Snitch Ubuntu _MyTest ssh)
-    ],
+    ),
     'identified the service',
 );
 
