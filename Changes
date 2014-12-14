@@ -2,6 +2,14 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.001   2014-12-13 21:21:10Z
+        - fix test of installed plugins to allow for third-party plugins also
+          being installed
+
+1.000   2014-12-12 03:25:40Z
+        - fix the accidental loss of the plugins() method in 0.97 (thanks,
+          Dean Hamstead!)
+
 0.99    2014-12-10 04:53:43Z
         - gist URLs now use HTTPS (thanks, Darian Anthony Patrick!)
 
