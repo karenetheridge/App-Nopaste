@@ -27,7 +27,7 @@ cmp_deeply(
     [ App::Nopaste->plugins ],
     superbagof(
         map { 'App::Nopaste::Service::' . $_ }
-            qw(Codepeek Debian Gist PastebinCom Pastie Shadowcat Snitch Ubuntu _MyTest ssh)
+            qw(Codepeek Debian Gist Mojopaste PastebinCom Pastie Shadowcat Snitch Ubuntu _MyTest ssh)
     ),
     'identified the service',
 );
