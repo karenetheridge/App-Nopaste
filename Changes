@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - new Mojopaste plugin (thanks, Dean Hamstead!)
 
 1.001   2014-12-13 21:21:10Z
         - fix test of installed plugins to allow for third-party plugins also
