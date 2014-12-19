@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+1.002   2014-12-19 06:50:34Z
         - new Mojopaste plugin (thanks, Dean Hamstead!)
 
 1.001   2014-12-13 21:21:10Z
