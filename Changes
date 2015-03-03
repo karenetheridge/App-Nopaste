@@ -3,6 +3,7 @@ Revision history for {{$dist->name}}
 {{$NEXT}}
         - fix the Gist plugin to work with github's stricter validation
           (PR #11, Tatsuhiko Miyagawa)
+        - removed +x permissions on files (RT#102361)
 
 1.003   2015-01-03 20:52:17Z
         - re-release to fix problematic $VERSION declaration (RT#101095)
