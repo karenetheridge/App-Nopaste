@@ -86,6 +86,7 @@ __END__
 
 =pod
 
+=for :header
 =for stopwords nopaste pastebin
 
 =head1 NAME

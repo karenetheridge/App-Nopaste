@@ -95,6 +95,7 @@ __END__
 
 =pod
 
+=for :header
 =for stopwords pastebot XXX chan desc lang mech nopaste canonicalization
 
 =head1 NAME

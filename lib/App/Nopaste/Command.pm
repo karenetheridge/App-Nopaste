@@ -145,6 +145,7 @@ __END__
 
 =pod
 
+=for :header
 =for stopwords chan desc lang nopaste pastebot
 
 =head1 NAME
