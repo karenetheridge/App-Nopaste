@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service;
+# ABSTRACT: base class for nopaste services
 
 use WWW::Mechanize;
 
@@ -97,10 +98,6 @@ __END__
 
 =for :header
 =for stopwords pastebot XXX chan desc lang mech nopaste canonicalization
-
-=head1 NAME
-
-App::Nopaste::Service - base class for nopaste services
 
 =head1 SYNOPSIS
 

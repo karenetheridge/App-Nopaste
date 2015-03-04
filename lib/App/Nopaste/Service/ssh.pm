@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::ssh;
+# ABSTRACT: Copies files to your server using scp
 
 use base 'App::Nopaste::Service';
 use File::Temp;
@@ -67,16 +68,6 @@ __END__
 
 =for stopwords dir
 
-=head1 NAME
-
-App::Nopaste::Service::ssh - copies files to your server using scp
-
-=head1 AUTHOR
-
-Kevin Falcone C<< <falcone@cpan.org> >>
-
-Thomas Sibley C<< <trs@bestpractical.com> >>
-
 =head1 ENVIRONMENT VARIABLES
 
 =over 4
@@ -120,5 +111,11 @@ C<.htaccess> in your paste dir.
 It prevents common means of script execution so that C<.pl> and C<.cgi>
 files won't run and defaults the character set to UTF-8 so browsers
 don't have to guess wrong.
+
+=head1 AUTHOR
+
+Kevin Falcone C<< <falcone@cpan.org> >>
+
+Thomas Sibley C<< <trs@bestpractical.com> >>
 
 =cut

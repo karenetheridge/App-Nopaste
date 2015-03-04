@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Shadowcat;
+# ABSTRACT: Service provider for Shadowcat - http://paste.scsys.co.uk/
 
 use base 'App::Nopaste::Service';
 
@@ -13,12 +14,3 @@ sub available {
 sub uri { "http://paste.scsys.co.uk" }
 
 1;
-__END__
-
-=pod
-
-=head1 NAME
-
-App::Nopaste::Service::Shadowcat - http://paste.scsys.co.uk/
-
-=cut

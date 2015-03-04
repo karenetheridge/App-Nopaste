@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Command;
+# ABSTRACT: command-line utility for L<App::Nopaste>
 
 use Getopt::Long::Descriptive ();
 
@@ -147,10 +148,6 @@ __END__
 
 =for :header
 =for stopwords chan desc lang nopaste pastebot
-
-=head1 NAME
-
-App::Nopaste::Command - command-line utility for L<App::Nopaste>
 
 =head1 DESCRIPTION
 

@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::PastebinCom;
+# ABSTRACT: Service provider for Pastebin - http://pastebin.com/
 
 use base 'App::Nopaste::Service';
 use Module::Runtime 'use_module';
@@ -34,9 +35,8 @@ __END__
 
 =pod
 
-=head1 NAME
-
-App::Nopaste::Service::PastebinCom - http://pastebin.com/
+=for :header
+=for stopwords Pastebin
 
 =head1 SEE ALSO
 

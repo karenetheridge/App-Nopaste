@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Codepeek;
+# ABSTRACT: Service for Codepeek - http://codepeek.com
 
 use base 'App::Nopaste::Service';
 
@@ -36,10 +37,6 @@ sub return {
 __END__
 
 =pod
-
-=head1 NAME
-
-App::Nopaste::Service::Codepeek - http://codepeek.com
 
 =head1 AUTHOR
 

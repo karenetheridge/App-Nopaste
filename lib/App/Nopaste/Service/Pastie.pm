@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Pastie;
+# ABSTRACT: Service provider for Pastie - pastie.org
 
 use base 'App::Nopaste::Service';
 
@@ -93,12 +94,3 @@ sub return {
 }
 
 1;
-__END__
-
-=pod
-
-=head1 NAME
-
-App::Nopaste::Service::Pastie - http://pastie.org
-
-=cut

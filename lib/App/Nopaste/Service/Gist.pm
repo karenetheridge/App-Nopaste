@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Gist;
+# ABSTRACT: Service provider for GitHub gist - http://gist.github.com/
 
 use base 'App::Nopaste::Service';
 
@@ -146,10 +147,6 @@ __END__
 =pod
 
 =for stopwords SIGNES gists oauth
-
-=head1 NAME
-
-App::Nopaste::Service::Gist - http://gist.github.com/
 
 =head1 GitHub Authorization
 

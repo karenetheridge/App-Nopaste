@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Debian;
+# ABSTRACT: Service provider for Debian - http://paste.debian.net/
 
 use base 'App::Nopaste::Service';
 
@@ -279,10 +280,6 @@ __END__
 =pod
 
 =for stopwords Niebur
-
-=head1 NAME
-
-App::Nopaste::Service::Debian - http://paste.debian.net/
 
 =head1 AUTHOR
 

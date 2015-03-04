@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Mojopaste;
+# ABSTRACT: Service provider for mojopaste
 
 use base 'App::Nopaste::Service';
 
@@ -43,11 +44,8 @@ __END__
 
 =pod
 
+=for :header
 =for stopwords mojopaste
-
-=head1 NAME
-
-App::Nopaste::Service::Mojopaste - A mojopaste instance
 
 =head1 USAGE
 

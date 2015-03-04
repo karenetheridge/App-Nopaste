@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Ubuntu;
+# ABSTRACT: Service provider for Ubuntu - http://paste.ubuntu.com/
 
 use base 'App::Nopaste::Service';
 
@@ -237,10 +238,6 @@ __END__
 =pod
 
 =for stopwords Niebur
-
-=head1 NAME
-
-App::Nopaste::Service::Ubuntu - http://paste.ubuntu.com/
 
 =head1 AUTHOR
 

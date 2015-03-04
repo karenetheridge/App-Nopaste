@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste;
+# ABSTRACT: Easy access to any pastebin
 
 use 5.008003;
 use Module::Pluggable search_path => 'App::Nopaste::Service', sub_name => '_plugins';
@@ -88,10 +89,6 @@ __END__
 
 =for :header
 =for stopwords nopaste pastebin
-
-=head1 NAME
-
-App::Nopaste - Easy access to any pastebin
 
 =head1 SYNOPSIS
 
