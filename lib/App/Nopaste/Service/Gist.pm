@@ -22,7 +22,7 @@ sub run {
     my $ua = LWP::UserAgent->new;
 
     my $content = {
-        public => defined $arg{private} ? 0 : 1,
+        public => defined $arg{private} ? JSON->false : JSON->true,
         defined $arg{desc} ? (description => $arg{desc}) : (),
     };
 
@@ -47,7 +47,8 @@ sub run {
             $ua->post(
                 $url,
                 'Authorization' => "token $auth{oauth_token}",
-                Content         => $content
+                Content         => $content,
+                Content_Type    => 'application/json',
             );
         }
         else {
