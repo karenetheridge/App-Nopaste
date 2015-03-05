@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package App::Nopaste;
 # ABSTRACT: Easy access to any pastebin
-
+our $VERSION = '1.005';
 use 5.008003;
 use Module::Pluggable search_path => 'App::Nopaste::Service', sub_name => '_plugins';
 use Class::Load 'load_class';

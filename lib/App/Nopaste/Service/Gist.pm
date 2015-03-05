@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package App::Nopaste::Service::Gist;
 # ABSTRACT: Service provider for GitHub gist - http://gist.github.com/
-
+our $VERSION = '1.005';
 use base 'App::Nopaste::Service';
 
 use File::Basename ();

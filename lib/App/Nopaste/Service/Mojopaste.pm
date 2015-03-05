@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package App::Nopaste::Service::Mojopaste;
 # ABSTRACT: Service provider for mojopaste
-
+our $VERSION = '1.005';
 use base 'App::Nopaste::Service';
 
 sub uri { $ENV{NOPASTE_MOJOPASTE_WEBPATH} || 'https://ssl.thorsen.pm/paste' }

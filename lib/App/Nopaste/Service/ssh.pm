@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package App::Nopaste::Service::ssh;
 # ABSTRACT: Copies files to your server using scp
-
+our $VERSION = '1.005';
 use base 'App::Nopaste::Service';
 use File::Temp;
 use File::Spec;
