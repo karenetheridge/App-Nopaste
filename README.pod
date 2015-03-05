@@ -1,5 +1,7 @@
 =pod
 
+=encoding UTF-8
+
 =for stopwords nopaste pastebin
 
 =head1 NAME
@@ -8,7 +10,7 @@ App::Nopaste - Easy access to any pastebin
 
 =head1 VERSION
 
-version 1.003
+version 1.004
 
 =head1 SYNOPSIS
 
@@ -98,5 +100,132 @@ Copyright 2008- Shawn M Moore.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
+
+=head1 AUTHOR
+
+Shawn M Moore, <sartak@gmail.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2008 by Shawn M Moore.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=head1 CONTRIBUTORS
+
+=for stopwords Shawn M Moore Karen Etheridge Thomas Sibley François Gannaz Ricardo Signes Justin Hunter Kevin Falcone Zoffix Znet David Golden Dean Hamstead Sergey Romanov Jesse Luehrs Rafael Kitover Arthur Axel 'fREW' Schmidt יובל קוג'מן (Yuval Kogman) Darian Anthony Patrick Bremner Graham Knop Jason Mills John Goulah Maximilian Gass Sebastian Paaske Tørholm Tatsuhiko Miyagawa gregor herrmann vti Ævar Arnfjörð Bjarmason Сергей Романов
+
+=over 4
+
+=item *
+
+Shawn M Moore <code@sartak.org>
+
+=item *
+
+Karen Etheridge <ether@cpan.org>
+
+=item *
+
+Thomas Sibley <tsibley@cpan.org>
+
+=item *
+
+François Gannaz <francois.gannaz@silecs.info>
+
+=item *
+
+Ricardo Signes <rjbs@cpan.org>
+
+=item *
+
+Justin Hunter <justin.d.hunter@gmail.com>
+
+=item *
+
+Kevin Falcone <kevin@jibsheet.com>
+
+=item *
+
+Zoffix Znet <cpan@zoffix.com>
+
+=item *
+
+David Golden <dagolden@cpan.org>
+
+=item *
+
+Dean Hamstead <dean@fragfest.com.au>
+
+=item *
+
+Sergey Romanov <complefor@rambler.ru>
+
+=item *
+
+Jesse Luehrs <doy@tozt.net>
+
+=item *
+
+Rafael Kitover <rkitover@cpan.org>
+
+=item *
+
+Arthur Axel 'fREW' Schmidt <frioux@gmail.com>
+
+=item *
+
+יובל קוג'מן (Yuval Kogman) <nothingmuch@woobling.org>
+
+=item *
+
+Darian Anthony Patrick <dap@darianpatrick.com>
+
+=item *
+
+David Bremner <bremner@unb.ca>
+
+=item *
+
+Graham Knop <haarg@haarg.org>
+
+=item *
+
+Jason Mills <jmmills@cpan.org>
+
+=item *
+
+John Goulah <jgoulah@gmail.com>
+
+=item *
+
+Maximilian Gass <mxey@ghosthacking.net>
+
+=item *
+
+Sebastian Paaske Tørholm <Eckankar+github@gmail.com>
+
+=item *
+
+Tatsuhiko Miyagawa <miyagawa@bulknews.net>
+
+=item *
+
+gregor herrmann <gregoa@debian.org>
+
+=item *
+
+vti <viacheslav.t@gmail.com>
+
+=item *
+
+Ævar Arnfjörð Bjarmason <avarab@gmail.com>
+
+=item *
+
+Сергей Романов <sromanov@cpan.org>
+
+=back
 
 =cut

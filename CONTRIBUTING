@@ -11,6 +11,9 @@ follow any of the steps in this document to submit a patch or bug report;
 these are just recommendations, intended to help you (and help us help you
 faster).
 
+This distribution has a TODO file in the repository; you may want to check
+there to see if your issue or patch idea is mentioned.
+
 The distribution is managed with Dist::Zilla (https://metacpan.org/release/Dist-Zilla).
 This means than many of the usual files you might expect are not in the
 repository, but are generated at release time (e.g. Makefile.PL).
@@ -93,4 +96,4 @@ request to the .mailmap file to contain the correct mapping.
 
 
 This file was generated via Dist::Zilla::Plugin::GenerateFile::ShareDir 0.005 from a
-template file originating in Dist-Zilla-PluginBundle-Author-ETHER-0.082.
+template file originating in Dist-Zilla-PluginBundle-Author-ETHER-0.088.
