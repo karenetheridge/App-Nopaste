@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Codepeek;
-# ABSTRACT: Service for Codepeek - http://codepeek.com
+# ABSTRACT: (DEPRECATED) Service for Codepeek - http://codepeek.com
 
 use base 'App::Nopaste::Service';
 
@@ -37,6 +37,10 @@ sub return {
 __END__
 
 =pod
+
+=head1 DEPRECATION NOTICE
+
+L<http://codepeek.com> is now offline, so this service no longer works.
 
 =head1 AUTHOR
 
