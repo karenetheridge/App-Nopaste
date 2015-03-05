@@ -1,0 +1,10 @@
+
+- need some tests of the backends - to test that they still work as designed
+
+- mark the CodePeek plugin as deprecated
+    -- requires update to [Deprecated] plugin
+
+    [Deprecated]
+    module = App::Nopaste::Service::Codepeek
+        (does *not* result in a x_deprecated on the entire module.)
+
