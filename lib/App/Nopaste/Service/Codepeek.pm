@@ -2,7 +2,9 @@ use strict;
 use warnings;
 package App::Nopaste::Service::Codepeek;
 # ABSTRACT: (DEPRECATED) Service for Codepeek - http://codepeek.com
+
 our $VERSION = '1.005';
+
 use base 'App::Nopaste::Service';
 
 sub uri { 'http://codepeek.com/paste' }

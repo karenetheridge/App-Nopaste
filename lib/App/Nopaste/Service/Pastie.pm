@@ -2,7 +2,9 @@ use strict;
 use warnings;
 package App::Nopaste::Service::Pastie;
 # ABSTRACT: Service provider for Pastie - pastie.org
+
 our $VERSION = '1.005';
+
 use base 'App::Nopaste::Service';
 
 my %languages = (

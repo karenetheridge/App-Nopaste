@@ -2,7 +2,9 @@ use strict;
 use warnings;
 package App::Nopaste::Service::Debian;
 # ABSTRACT: Service provider for Debian - http://paste.debian.net/
+
 our $VERSION = '1.005';
+
 use base 'App::Nopaste::Service';
 
 my $languages = {

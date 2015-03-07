@@ -2,7 +2,9 @@ use strict;
 use warnings;
 package App::Nopaste::Command;
 # ABSTRACT: command-line utility for L<App::Nopaste>
+
 our $VERSION = '1.005';
+
 use Getopt::Long::Descriptive ();
 
 use App::Nopaste;

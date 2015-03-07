@@ -2,7 +2,9 @@ use strict;
 use warnings;
 package App::Nopaste::Service::Shadowcat;
 # ABSTRACT: Service provider for Shadowcat - http://paste.scsys.co.uk/
+
 our $VERSION = '1.005';
+
 use base 'App::Nopaste::Service';
 
 sub available {
