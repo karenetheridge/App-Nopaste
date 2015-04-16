@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - mark App::Nopaste::Service::Codepeek as deprecated in metadata
 
 1.004   2015-03-05 05:18:44Z
         - fix the Gist plugin to work with github's stricter validation
