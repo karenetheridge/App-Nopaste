@@ -1,4 +1,4 @@
-Revision history for {{$dist->name}}
+Revision history for App-Nopaste
 
 {{$NEXT}}
         - mark App::Nopaste::Service::Codepeek as deprecated in metadata
