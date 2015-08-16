@@ -2,6 +2,7 @@ use strict;
 use warnings;
 package App::Nopaste;
 # ABSTRACT: Easy access to any pastebin
+# KEYWORDS: application executable paste output pastebin debugging
 
 our $VERSION = '1.005';
 
