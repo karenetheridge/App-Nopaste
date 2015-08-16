@@ -10,7 +10,7 @@ use File::Temp;
 use File::Spec;
 use POSIX qw(strftime);
 use URI::Escape qw(uri_escape);
-use namespace::clean;
+use namespace::clean 0.19;
 
 sub run {
     my ($self, %args) = @_;

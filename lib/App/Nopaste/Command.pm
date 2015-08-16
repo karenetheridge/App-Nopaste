@@ -9,7 +9,7 @@ use Getopt::Long::Descriptive ();
 
 use App::Nopaste;
 use Module::Runtime 'use_module';
-use namespace::clean;
+use namespace::clean 0.19;
 
 sub new_with_options {
     my $class = shift;

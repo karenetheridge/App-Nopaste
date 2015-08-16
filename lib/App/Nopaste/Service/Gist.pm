@@ -10,7 +10,7 @@ use base 'App::Nopaste::Service';
 use File::Basename ();
 use JSON::MaybeXS;
 use Module::Runtime 'use_module';
-use namespace::clean;
+use namespace::clean 0.19;
 
 sub available         { 1 }
 sub forbid_in_default { 0 }

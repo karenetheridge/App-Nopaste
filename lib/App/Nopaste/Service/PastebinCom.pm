@@ -7,7 +7,7 @@ our $VERSION = '1.005';
 
 use base 'App::Nopaste::Service';
 use Module::Runtime 'use_module';
-use namespace::clean;
+use namespace::clean 0.19;
 
 sub available {
     eval { use_module('WWW::Pastebin::PastebinCom::Create'); 1 }
