@@ -4,6 +4,6 @@ use Test::More;
 
 use App::Nopaste::Service::Snitch;
 
-cmp_ok(App::Nopaste::Service::Snitch->uri, 'eq', 'http://nopaste.snit.ch');
+is(App::Nopaste::Service::Snitch->uri, 'http://nopaste.snit.ch');
 
 done_testing;

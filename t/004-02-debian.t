@@ -4,6 +4,6 @@ use Test::More;
 
 use App::Nopaste::Service::Debian;
 
-cmp_ok(App::Nopaste::Service::Debian->uri, 'eq', 'http://paste.debian.net/');
+is(App::Nopaste::Service::Debian->uri, 'http://paste.debian.net/');
 
 done_testing;
