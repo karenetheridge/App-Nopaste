@@ -10,6 +10,7 @@ use base 'App::Nopaste::Service';
 use File::Basename ();
 use JSON::MaybeXS;
 use Module::Runtime 'use_module';
+use Path::Tiny;
 use namespace::clean 0.19;
 
 sub available         { 1 }
@@ -77,12 +78,25 @@ sub _get_auth {
             password => $ENV{GITHUB_PASSWORD},
         );
     }
+    else {
+        my $github_config = path('~', '.github');
+        if (-f $github_config) {
+            my $content = $github_config->slurp_utf8;
+            my ($username) = $content =~ m/\blogin (.+)(?:$|#)/m;
+            my ($password) = $content =~ m/\bpassword (.+)(?:$|#)/m;
+            return (
+                username => $username,
+                password => $password,
+            ) if $username and $password;
+        }
+    }
 
     die join("\n",
         "Export GITHUB_OAUTH_TOKEN first. For example:",
         "    perl -MApp::Nopaste::Service::Gist -e 'App::Nopaste::Service::Gist->create_token'",
         "",
         "OR you can export GITHUB_USER and GITHUB_PASSWORD.",
+        "OR you can set 'login' and 'password' in ~/.github.",
     ) . "\n";
 }
 
@@ -148,7 +162,7 @@ __END__
 
 =pod
 
-=for stopwords SIGNES gists oauth
+=for stopwords SIGNES gists oauth plaintext
 
 =head1 GitHub Authorization
 
@@ -169,6 +183,11 @@ response and export it as C<GITHUB_OAUTH_TOKEN> environment variable.
 Alternatively, you can export the C<GITHUB_USER> and C<GITHUB_PASSWORD>
 environment variables, just like for the
 L<gist|https://github.com/defunkt/gist> utility.
+
+You can also simply store your credentials in plaintext in F<~/.github> as in:
+
+    login bob
+    password ilikeducks
 
 That's it!
 
