@@ -1,0 +1,21 @@
+sudo: false
+addons:
+  apt:
+    packages:
+      - aspell
+language: perl
+perl:
+  - "5.24"
+  - "5.22"
+  - "5.20"
+  - "5.18"
+  - "5.16"
+  - "5.14"
+  - "5.12"
+  - "5.10"
+install:
+  - cpanm JSON::PP Dist::Zilla Dist::Zilla::Plugin::BlockRelease
+  - dzil authordeps --missing | cpanm || { cat ~/.cpanm/build.log ; false ; }
+  - dzil listdeps --author --missing | cpanm || { cat ~/.cpanm/build.log ; false ; }
+script:
+  - HARNESS_OPTIONS=j9:c DZIL_AIRPLANE=1 PERL5OPT=Ilib dzil test --author
