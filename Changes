@@ -1,6 +1,6 @@
 Revision history for App-Nopaste
 
-{{$NEXT}}
+1.005   2016-05-20 02:39:52Z
         - mark App::Nopaste::Service::Codepeek as deprecated in metadata
         - the Gist command also looks in ~/.github for credentials
         - many additional tests; thanks David J. Shultz!
