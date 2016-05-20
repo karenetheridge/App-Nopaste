@@ -7,7 +7,6 @@ our $VERSION = '1.005';
 
 use base 'App::Nopaste::Service';
 
-use File::Basename ();
 use JSON::MaybeXS;
 use Module::Runtime 'use_module';
 use Path::Tiny;
@@ -31,7 +30,7 @@ sub run {
     };
 
     my $filename = defined $arg{filename}
-                 ? File::Basename::basename($arg{filename})
+                 ? path($arg{filename})->basename->stringify
                  : 'nopaste';
 
     $content->{files} = {
