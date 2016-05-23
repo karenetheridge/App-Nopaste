@@ -13,7 +13,8 @@ ok(!App::Nopaste::Service::Gist->forbid_in_default);
     local $ENV{GITHUB_OAUTH_TOKEN} = 'foo';
     cmp_deeply(
         [ App::Nopaste::Service::Gist->_get_auth() ],
-        [ oauth_token => 'foo' ]
+        [ oauth_token => 'foo' ],
+        'got OAuth token as credentials',
     );
 }
 
@@ -24,6 +25,7 @@ ok(!App::Nopaste::Service::Gist->forbid_in_default);
     cmp_deeply(
         [ App::Nopaste::Service::Gist->_get_auth() ],
         [ username => 'perl', password => 'user' ],
+        'got plaintext user, password as credentials',
     );
 }
 
