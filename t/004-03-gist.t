@@ -31,12 +31,20 @@ ok(!App::Nopaste::Service::Gist->forbid_in_default);
 
 {
     local $ENV{GITHUB_USER}     = 'perl';
-    like(exception { App::Nopaste::Service::Gist->_get_auth(); }, qr/Export GITHUB_OAUTH_TOKEN first. For example:/, 'User is warned that a GITHUB_OAUTH_TOKEN is required');
+    like(
+        exception { App::Nopaste::Service::Gist->_get_auth() },
+        qr/Export GITHUB_OAUTH_TOKEN first. For example:/,
+        'User is warned that a GITHUB_OAUTH_TOKEN is required',
+    );
 }
 
 {
     local $ENV{GITHUB_PASSWORD} = 'user';
-    like(exception { App::Nopaste::Service::Gist->_get_auth(); }, qr/Export GITHUB_OAUTH_TOKEN first. For example:/, 'User is warned that a GITHUB_OAUTH_TOKEN is required');
+    like(
+        exception { App::Nopaste::Service::Gist->_get_auth() },
+        qr/Export GITHUB_OAUTH_TOKEN first. For example:/,
+        'User is warned that a GITHUB_OAUTH_TOKEN is required',
+    );
 }
 
 done_testing;
