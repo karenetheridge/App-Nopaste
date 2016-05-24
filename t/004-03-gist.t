@@ -1,6 +1,7 @@
 use strict;
 use warnings;
-use Test::More;
+
+use Test::More 0.88;
 use Test::Deep;
 use Test::Fatal;
 use Path::Tiny;
