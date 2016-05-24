@@ -1,6 +1,7 @@
 Revision history for App-Nopaste
 
 {{$NEXT}}
+        - fix failing tests with other locales, environment settings
 
 1.005   2016-05-20 02:39:52Z
         - mark App::Nopaste::Service::Codepeek as deprecated in metadata
