@@ -2,13 +2,15 @@ use strict;
 use warnings;
 use Test::More;
 use Test::Deep;
-use Test::Trap;
+use Test::Fatal;
 
 use App::Nopaste::Service;
 
-# Ensure we die if we don't have a uri provided
-trap { App::Nopaste::Service->uri(); };
-like($trap->die, qr/App::Nopaste::Service must provide a 'uri' method/);
+like(
+    exception { App::Nopaste::Service->uri() },
+    qr/App::Nopaste::Service must provide a 'uri' method/,
+    'appropriate error when no URI is provided',
+);
 
 {
     package _MyTest::Service;
@@ -19,8 +21,10 @@ like($trap->die, qr/App::Nopaste::Service must provide a 'uri' method/);
     }
 }
 
-# ensure we die with a reasonable error when we cannot connect to the remote uri
-trap { _MyTest::Service->nopaste(); };
-like($trap->die, qr/Can't connect to not.valid:80/);
+like(
+    exception { _MyTest::Service->nopaste() },
+    qr/Can't connect to not.valid:80/,
+    'appropriate error when remote URI is not available',
+);
 
 done_testing;
