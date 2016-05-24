@@ -1,5 +1,7 @@
 Revision history for App-Nopaste
 
+{{$NEXT}}
+
 1.006   2016-05-24 02:55:20Z
         - fix failing tests with other locales, environment settings
 

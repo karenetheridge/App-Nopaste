@@ -3,7 +3,7 @@ use warnings;
 package App::Nopaste::Service::Ubuntu;
 # ABSTRACT: Service provider for Ubuntu - http://paste.ubuntu.com/
 
-our $VERSION = '1.006';
+our $VERSION = '1.007';
 
 use base 'App::Nopaste::Service';
 

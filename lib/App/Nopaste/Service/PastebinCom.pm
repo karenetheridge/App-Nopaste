@@ -3,7 +3,7 @@ use warnings;
 package App::Nopaste::Service::PastebinCom;
 # ABSTRACT: Service provider for Pastebin - http://pastebin.com/
 
-our $VERSION = '1.006';
+our $VERSION = '1.007';
 
 use base 'App::Nopaste::Service';
 use Module::Runtime 'use_module';
