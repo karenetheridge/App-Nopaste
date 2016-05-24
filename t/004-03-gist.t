@@ -7,6 +7,12 @@ use Path::Tiny;
 
 use App::Nopaste::Service::Gist;
 
+# clear these first to avoid interfering with tests -- and be sure we don't
+# accidentally user's credentials into test results!
+local $ENV{GITHUB_USER};
+local $ENV{GITHUB_PASSWORD};
+local $ENV{GITHUB_OAUTH_TOKEN};
+
 ok(App::Nopaste::Service::Gist->available);
 ok(!App::Nopaste::Service::Gist->forbid_in_default);
 
