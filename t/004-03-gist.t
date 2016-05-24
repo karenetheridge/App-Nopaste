@@ -3,6 +3,7 @@ use warnings;
 use Test::More;
 use Test::Deep;
 use Test::Fatal;
+use Path::Tiny;
 
 use App::Nopaste::Service::Gist;
 
@@ -29,7 +30,12 @@ ok(!App::Nopaste::Service::Gist->forbid_in_default);
     );
 }
 
+my $has_config_file = -f path('~', '.github');
+
+SKIP:
 {
+    skip '~/.github exists; cannot test missing GITHUB_PASSWORD', 1 if $has_config_file;
+
     local $ENV{GITHUB_USER}     = 'perl';
     like(
         exception { App::Nopaste::Service::Gist->_get_auth() },
@@ -38,7 +44,10 @@ ok(!App::Nopaste::Service::Gist->forbid_in_default);
     );
 }
 
+SKIP:
 {
+    skip '~/.github exists; cannot test missing GITHUB_USER', 1 if $has_config_file;
+
     local $ENV{GITHUB_PASSWORD} = 'user';
     like(
         exception { App::Nopaste::Service::Gist->_get_auth() },
