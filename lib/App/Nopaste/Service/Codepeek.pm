@@ -5,7 +5,7 @@ package App::Nopaste::Service::Codepeek;
 
 our $VERSION = '1.007';
 
-use base 'App::Nopaste::Service';
+use parent 'App::Nopaste::Service';
 
 sub uri { 'http://codepeek.com/paste' }
 

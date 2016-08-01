@@ -90,7 +90,7 @@ RETURN
 my @requests;
 {
     package LWP::Protocol::test;
-    use base 'LWP::Protocol';
+    use parent 'LWP::Protocol';
     sub request {
         my $self = shift;
         my ($req) = @_;
@@ -102,14 +102,14 @@ LWP::Protocol::implementor('http' => 'LWP::Protocol::test');
 
 {
     package App::Nopaste::Service::MyTest;
-    use base 'App::Nopaste::Service';
+    use parent 'App::Nopaste::Service';
 
     sub uri { 'http://localhost/' }
 }
 
 {
     package MyTest::Cmd;
-    use base 'App::Nopaste::Command';
+    use parent 'App::Nopaste::Command';
 
     sub read_text { '‘test’' }
 }

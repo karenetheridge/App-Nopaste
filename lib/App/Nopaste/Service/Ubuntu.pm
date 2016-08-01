@@ -5,7 +5,7 @@ package App::Nopaste::Service::Ubuntu;
 
 our $VERSION = '1.007';
 
-use base 'App::Nopaste::Service';
+use parent 'App::Nopaste::Service';
 
 my $languages = {
     "Plain Text"                     => "text",

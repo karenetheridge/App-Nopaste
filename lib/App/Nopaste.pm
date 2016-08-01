@@ -11,7 +11,7 @@ use Module::Pluggable search_path => 'App::Nopaste::Service', sub_name => '_plug
 use Class::Load 'load_class';
 use namespace::clean 0.19;
 
-use base 'Exporter';
+use parent 'Exporter';
 our @EXPORT_OK = 'nopaste';
 
 sub plugins { goto \&_plugins };

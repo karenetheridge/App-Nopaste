@@ -5,7 +5,7 @@ package App::Nopaste::Service::Pastie;
 
 our $VERSION = '1.007';
 
-use base 'App::Nopaste::Service';
+use parent 'App::Nopaste::Service';
 
 my %languages = (
     "bash" => "13",

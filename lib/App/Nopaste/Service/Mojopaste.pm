@@ -5,7 +5,7 @@ package App::Nopaste::Service::Mojopaste;
 
 our $VERSION = '1.007';
 
-use base 'App::Nopaste::Service';
+use parent 'App::Nopaste::Service';
 
 sub uri { $ENV{NOPASTE_MOJOPASTE_WEBPATH} || 'https://ssl.thorsen.pm/paste' }
 

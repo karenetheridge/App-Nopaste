@@ -5,7 +5,7 @@ package App::Nopaste::Service::ssh;
 
 our $VERSION = '1.007';
 
-use base 'App::Nopaste::Service';
+use parent 'App::Nopaste::Service';
 use File::Temp;
 use File::Spec;
 use POSIX qw(strftime);

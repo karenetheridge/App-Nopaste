@@ -5,7 +5,7 @@ use Test::Deep;
 
 {
     package App::Nopaste::Service::_MyTest;
-    use base 'App::Nopaste::Service';
+    use parent 'App::Nopaste::Service';
 
     sub available { 1 }
     sub uri { 'test' }
@@ -18,7 +18,7 @@ use Test::Deep;
 
 {
     package _MyTest::Cmd;
-    use base 'App::Nopaste::Command';
+    use parent 'App::Nopaste::Command';
 
     sub read_text { 'test' }
 }

@@ -5,7 +5,7 @@ package App::Nopaste::Service::Gist;
 
 our $VERSION = '1.007';
 
-use base 'App::Nopaste::Service';
+use parent 'App::Nopaste::Service';
 
 use JSON::MaybeXS;
 use Module::Runtime 'use_module';

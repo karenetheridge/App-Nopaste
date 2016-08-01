@@ -5,7 +5,7 @@ package App::Nopaste::Service::PastebinCom;
 
 our $VERSION = '1.007';
 
-use base 'App::Nopaste::Service';
+use parent 'App::Nopaste::Service';
 use Module::Runtime 'use_module';
 use namespace::clean 0.19;
 

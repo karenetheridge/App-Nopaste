@@ -104,7 +104,7 @@ __END__
 =head1 SYNOPSIS
 
     package App::Nopaste::Service::Shadowcat;
-    use base 'App::Nopaste::Service';
+    use parent 'App::Nopaste::Service';
 
     sub uri { "http://paste.scsys.co.uk/" }
 

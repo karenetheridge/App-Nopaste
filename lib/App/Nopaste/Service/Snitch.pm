@@ -5,7 +5,7 @@ package App::Nopaste::Service::Snitch;
 
 our $VERSION = '1.007';
 
-use base 'App::Nopaste::Service';
+use parent 'App::Nopaste::Service';
 
 sub available {
     my $self = shift;
