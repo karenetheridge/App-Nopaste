@@ -78,6 +78,7 @@ sub _get_auth {
         );
     }
     else {
+        # this is also done by the fallback mechanism in Config::Identity::GitHub.
         my $github_config = path('~', '.github');
         if (-f $github_config) {
             my $content = $github_config->slurp_utf8;
