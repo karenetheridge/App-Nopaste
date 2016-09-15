@@ -30,7 +30,7 @@ sub run {
     };
 
     my $filename = defined $arg{filename}
-                 ? path($arg{filename})->basename->stringify
+                 ? path($arg{filename})->basename
                  : 'nopaste';
 
     $content->{files} = {
