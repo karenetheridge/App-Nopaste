@@ -1,6 +1,8 @@
 Revision history for App-Nopaste
 
 {{$NEXT}}
+        - fix handling of filename option in the Gist command (Zakariyya
+          Mughal, PR#13)
 
 1.006   2016-05-24 02:55:20Z
         - fix failing tests with other locales, environment settings
