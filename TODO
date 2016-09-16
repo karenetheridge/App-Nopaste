@@ -3,3 +3,6 @@
 
 - need some tests of the backends - to test that they still work as designed
 
+
+I now have permissions for Clipboard -- can fix
+https://rt.cpan.org/Ticket/Display.html?id=98435
