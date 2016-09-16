@@ -176,9 +176,9 @@ or you can use this module to do the same:
 
     perl -MApp::Nopaste::Service::Gist -e 'App::Nopaste::Service::Gist->create_token'
 
-This will grant gist rights to the L<App::Nopaste>, don't worry you can revoke
+This will grant gist rights to the L<App::Nopaste>. Don't worry, you can revoke
 access rights anytime from the GitHub profile settings. Search for C<token> in
-response and export it as C<GITHUB_OAUTH_TOKEN> environment variable.
+response and export it as the C<GITHUB_OAUTH_TOKEN> environment variable.
 
 Alternatively, you can export the C<GITHUB_USER> and C<GITHUB_PASSWORD>
 environment variables, just like for the
