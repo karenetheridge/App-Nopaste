@@ -10,7 +10,7 @@ App::Nopaste - Easy access to any pastebin
 
 =head1 VERSION
 
-version 1.006
+version 1.007
 
 =head1 SYNOPSIS
 
@@ -112,7 +112,7 @@ Shawn M Moore, <sartak@gmail.com>
 
 =head1 CONTRIBUTORS
 
-=for stopwords Shawn M Moore Karen Etheridge Thomas Sibley François Gannaz Ricardo Signes Justin Hunter Kevin Falcone Zoffix Znet David Golden Dean Hamstead Sergey Romanov Jesse Luehrs Rafael Kitover Сергей Романов Arthur Axel 'fREW' Schmidt יובל קוג'מן (Yuval Kogman) Darian Anthony Patrick Bremner J. Shultz Graham Knop Jason Mills John Goulah Maximilian Gass Sebastian Paaske Tørholm Tatsuhiko Miyagawa gregor herrmann vti Ævar Arnfjörð Bjarmason
+=for stopwords Shawn M Moore Karen Etheridge Thomas Sibley François Gannaz Ricardo Signes Justin Hunter Kevin Falcone Zoffix Znet Sergey Romanov David Golden Jesse Luehrs Dean Hamstead Rafael Kitover Ævar Arnfjörð Bjarmason Сергей Романов Arthur Axel 'fREW' Schmidt יובל קוג'מן (Yuval Kogman) Darian Anthony Patrick Bremner J. Shultz Graham Knop Jason Mills John Goulah Maximilian Gass Sebastian Paaske Tørholm Tatsuhiko Miyagawa Zakariyya Mughal gregor herrmann vti
 
 =over 4
 
@@ -150,15 +150,11 @@ Zoffix Znet <cpan@zoffix.com>
 
 =item *
 
-David Golden <dagolden@cpan.org>
-
-=item *
-
-Dean Hamstead <dean@fragfest.com.au>
-
-=item *
-
 Sergey Romanov <complefor@rambler.ru>
+
+=item *
+
+David Golden <dagolden@cpan.org>
 
 =item *
 
@@ -166,7 +162,15 @@ Jesse Luehrs <doy@tozt.net>
 
 =item *
 
+Dean Hamstead <dean@fragfest.com.au>
+
+=item *
+
 Rafael Kitover <rkitover@cpan.org>
+
+=item *
+
+Ævar Arnfjörð Bjarmason <avarab@gmail.com>
 
 =item *
 
@@ -218,15 +222,15 @@ Tatsuhiko Miyagawa <miyagawa@bulknews.net>
 
 =item *
 
+Zakariyya Mughal <zaki.mughal@gmail.com>
+
+=item *
+
 gregor herrmann <gregoa@debian.org>
 
 =item *
 
 vti <viacheslav.t@gmail.com>
-
-=item *
-
-Ævar Arnfjörð Bjarmason <avarab@gmail.com>
 
 =back
 
