@@ -7,6 +7,8 @@ our $VERSION = '1.008';
 
 use parent 'App::Nopaste::Service';
 
+warnings::warnif('deprecated', 'codepeek.com is offline, so this service no longer works');
+
 sub uri { 'http://codepeek.com/paste' }
 
 sub fill_form {
