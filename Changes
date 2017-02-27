@@ -1,6 +1,8 @@
 Revision history for App-Nopaste
 
 {{$NEXT}}
+        - updated paste URLs for Debian and Ubuntu services (RT#120369, Gregor
+          Herrmann)
 
 1.007   2016-09-16 02:26:28Z
         - fix handling of filename option in the Gist command (Zakariyya

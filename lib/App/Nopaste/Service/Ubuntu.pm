@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Ubuntu;
-# ABSTRACT: Service provider for Ubuntu - http://paste.ubuntu.com/
+# ABSTRACT: Service provider for Ubuntu - https://paste.ubuntu.com/
 
 our $VERSION = '1.008';
 
@@ -207,7 +207,7 @@ my $languages = {
     "YAML"                           => "yaml",
 };
 
-sub uri { "http://paste.ubuntu.com/" }
+sub uri { "https://paste.ubuntu.com/" }
 
 sub fill_form {
     my $self = shift;

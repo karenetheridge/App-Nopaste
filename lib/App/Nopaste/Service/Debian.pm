@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 package App::Nopaste::Service::Debian;
-# ABSTRACT: Service provider for Debian - http://paste.debian.net/
+# ABSTRACT: Service provider for Debian - https://paste.debian.net/
 
 our $VERSION = '1.008';
 
@@ -246,7 +246,7 @@ my $languages = {
     "yaml" => "yaml",
 };
 
-sub uri { "http://paste.debian.net/" }
+sub uri { "https://paste.debian.net/" }
 
 sub fill_form {
     my $self = shift;
