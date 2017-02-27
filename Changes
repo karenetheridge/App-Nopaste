@@ -1,6 +1,6 @@
 Revision history for App-Nopaste
 
-{{$NEXT}}
+1.008   2017-02-27 01:05:29Z
         - updated paste URLs for Debian and Ubuntu services (RT#120369, Gregor
           Herrmann)
         - deprecation warning added to the now-defunct Codepeek service
