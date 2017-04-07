@@ -24,8 +24,8 @@ sub fill_form {
 
     $mech->submit_form(
         fields        => {
-            p       => 1,
-            content => $args{text},
+            p     => 1,
+            paste => $args{text},
         },
     );
 
