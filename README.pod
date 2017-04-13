@@ -10,7 +10,7 @@ App::Nopaste - Easy access to any pastebin
 
 =head1 VERSION
 
-version 1.008
+version 1.009
 
 =head1 SYNOPSIS
 
@@ -112,7 +112,7 @@ Shawn M Moore, <sartak@gmail.com>
 
 =head1 CONTRIBUTORS
 
-=for stopwords Shawn M Moore Karen Etheridge Thomas Sibley François Gannaz Ricardo Signes Justin Hunter Kevin Falcone Zoffix Znet Sergey Romanov David Golden Jesse Luehrs Dean Hamstead Rafael Kitover Ævar Arnfjörð Bjarmason Сергей Романов Arthur Axel 'fREW' Schmidt יובל קוג'מן (Yuval Kogman) Darian Anthony Patrick Bremner J. Shultz Graham Knop Jason Mills John Goulah Maximilian Gass Sebastian Paaske Tørholm Tatsuhiko Miyagawa Zakariyya Mughal gregor herrmann vti
+=for stopwords Shawn M Moore Karen Etheridge Thomas Sibley François Gannaz Ricardo Signes Justin Hunter Kevin Falcone Zoffix Znet Sergey Romanov David Golden Jesse Luehrs Dean Hamstead Rafael Kitover vti Ævar Arnfjörð Bjarmason Сергей Романов Andrew Rodland יובל קוג'מן (Yuval Kogman) Arthur Axel 'fREW' Schmidt Darian Anthony Patrick Bremner J. Shultz Graham Knop Jason Mills John Goulah Maximilian Gass Sebastian Paaske Tørholm Tatsuhiko Miyagawa Zakariyya Mughal gregor herrmann
 
 =over 4
 
@@ -170,6 +170,10 @@ Rafael Kitover <rkitover@cpan.org>
 
 =item *
 
+vti <viacheslav.t@gmail.com>
+
+=item *
+
 Ævar Arnfjörð Bjarmason <avarab@gmail.com>
 
 =item *
@@ -178,11 +182,15 @@ Rafael Kitover <rkitover@cpan.org>
 
 =item *
 
-Arthur Axel 'fREW' Schmidt <frioux@gmail.com>
+Andrew Rodland <andrew@cleverdomain.org>
 
 =item *
 
 יובל קוג'מן (Yuval Kogman) <nothingmuch@woobling.org>
+
+=item *
+
+Arthur Axel 'fREW' Schmidt <frioux@gmail.com>
 
 =item *
 
@@ -227,10 +235,6 @@ Zakariyya Mughal <zaki.mughal@gmail.com>
 =item *
 
 gregor herrmann <gregoa@debian.org>
-
-=item *
-
-vti <viacheslav.t@gmail.com>
 
 =back
 
