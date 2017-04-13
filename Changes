@@ -1,6 +1,8 @@
 Revision history for App-Nopaste
 
 {{$NEXT}}
+        - fixed arguments for the Mojopaste service, to work with the default
+          service provider at thorsen.pm (PR#14, Andrew Rodland)
 
 1.008   2017-02-27 01:05:29Z
         - updated paste URLs for Debian and Ubuntu services (RT#120369, Gregor
