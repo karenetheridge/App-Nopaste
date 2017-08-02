@@ -1,5 +1,7 @@
 Revision history for App-Nopaste
 
+{{$NEXT}}
+
 1.010   2017-08-02 04:38:50Z
         - fix shebang in 'nopaste' executable
 
