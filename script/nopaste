@@ -2,7 +2,7 @@
 
 use strict;
 use warnings;
-# PODNAME: command-line utility to nopaste
+# PODNAME: nopaste - command-line utility to nopaste
 
 use App::Nopaste::Command;
 
