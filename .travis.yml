@@ -14,9 +14,22 @@ perl:
   - "5.14"
   - "5.12"
   - "5.10"
+env:
+  global:
+    - TEST_PARTITIONS=1
+    - AUTOMATED_TESTING=1
+    - RELEASE_TESTING=0
+
+before_install:
+  - git clone git://github.com/travis-perl/helpers ~/travis-perl-helpers
+  - source ~/travis-perl-helpers/init
+  - build-perl
+  - perl -V
+  - build-dist
+  - cd $BUILD_DIR
 install:
-  - cpanm JSON::PP Dist::Zilla Dist::Zilla::Plugin::BlockRelease
-  - dzil authordeps --missing | cpanm || { cat ~/.cpanm/build.log ; false ; }
-  - dzil listdeps --author --missing | cpanm || { cat ~/.cpanm/build.log ; false ; }
+  - cpan-install --deps
 script:
-  - HARNESS_OPTIONS=j9:c DZIL_AIRPLANE=1 PERL5OPT=Ilib dzil test --author
+  - perl Makefile.PL
+  - make
+  - prove -b -r -s -j1 $(test-files)
