@@ -3,7 +3,7 @@ use warnings;
 package App::Nopaste::Command;
 # ABSTRACT: command-line utility for L<App::Nopaste>
 
-our $VERSION = '1.011';
+our $VERSION = '1.012';
 
 use Getopt::Long::Descriptive ();
 

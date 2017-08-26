@@ -3,7 +3,7 @@ use warnings;
 package App::Nopaste::Service::Shadowcat;
 # ABSTRACT: Service provider for Shadowcat - http://paste.scsys.co.uk/
 
-our $VERSION = '1.011';
+our $VERSION = '1.012';
 
 use parent 'App::Nopaste::Service';
 

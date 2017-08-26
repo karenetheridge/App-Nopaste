@@ -3,7 +3,7 @@ use warnings;
 package App::Nopaste::Service::Debian;
 # ABSTRACT: Service provider for Debian - https://paste.debian.net/
 
-our $VERSION = '1.011';
+our $VERSION = '1.012';
 
 use parent 'App::Nopaste::Service';
 
