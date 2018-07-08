@@ -173,7 +173,7 @@ L<http://perladvent.org/2011/2011-12-14.html>
 
 =head1 AUTHOR
 
-Shawn M Moore, C<sartak@gmail.com>
+Shawn M Moore, <sartak@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 

@@ -175,6 +175,6 @@ pasted text.
 
 =head1 AUTHOR
 
-Shawn M Moore, C<< <sartak at gmail.com> >>
+Shawn M Moore, <sartak at gmail.com>
 
 =cut

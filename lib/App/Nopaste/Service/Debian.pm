@@ -285,6 +285,6 @@ __END__
 
 =head1 AUTHOR
 
-Ryan Niebur, C<< <ryanryan52@gmail.com> >>
+Ryan Niebur, <ryanryan52@gmail.com>
 
 =cut

@@ -120,4 +120,4 @@ That's it!
 
 =head1 AUTHOR
 
-Ricardo SIGNES, C<< <rjbs@cpan.org> >>
+Ricardo SIGNES, <rjbs@cpan.org>

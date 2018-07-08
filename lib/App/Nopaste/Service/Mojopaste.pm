@@ -63,6 +63,6 @@ For example:
 
 =head1 AUTHOR
 
-Dean Hamstead, C<< <dean@bytefoundry.com.au> >>
+Dean Hamstead, <dean@bytefoundry.com.au>
 
 =cut

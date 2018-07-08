@@ -243,7 +243,7 @@ __END__
 
 =head1 AUTHOR
 
-gregor herrmann, C<< <gregoa@debian.org> >>
+gregor herrmann, <gregoa@debian.org>
 
 (Based on App::Nopaste::Service::Debian, written by
 Ryan Niebur, C<< <ryanryan52@gmail.com> >>)

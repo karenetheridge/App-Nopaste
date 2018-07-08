@@ -48,6 +48,6 @@ L<http://codepeek.com> is now offline, so this service no longer works.
 
 =head1 AUTHOR
 
-Justin Hunter, C<< <justin.d.hunter@gmail.com> >>
+Justin Hunter, <justin.d.hunter@gmail.com>
 
 =cut

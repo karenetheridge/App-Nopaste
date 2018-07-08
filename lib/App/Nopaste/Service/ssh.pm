@@ -116,8 +116,8 @@ don't have to guess wrong.
 
 =head1 AUTHOR
 
-Kevin Falcone C<< <falcone@cpan.org> >>
+Kevin Falcone <falcone@cpan.org
 
-Thomas Sibley C<< <trs@bestpractical.com> >>
+Thomas Sibley <trs@bestpractical.com>
 
 =cut
