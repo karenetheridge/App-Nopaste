@@ -7,6 +7,7 @@ our $VERSION = '1.012';
 
 use parent 'App::Nopaste::Service';
 
+use LWP::UserAgent;
 use JSON::MaybeXS;
 use Module::Runtime 'use_module';
 use Path::Tiny;
