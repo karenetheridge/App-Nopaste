@@ -4,7 +4,7 @@ package App::Nopaste;
 # ABSTRACT: Easy access to any pastebin
 # KEYWORDS: application executable paste output pastebin debugging
 
-our $VERSION = '1.012';
+our $VERSION = '1.013';
 
 use 5.008003;
 use Module::Pluggable search_path => 'App::Nopaste::Service', sub_name => '_plugins';

@@ -3,7 +3,7 @@ use warnings;
 package App::Nopaste::Service::Pastie;
 # ABSTRACT: Service provider for Pastie - pastie.org
 
-our $VERSION = '1.012';
+our $VERSION = '1.013';
 
 use parent 'App::Nopaste::Service';
 
