@@ -16,10 +16,9 @@ perl:
   - "5.10"
 env:
   global:
-    - TEST_PARTITIONS=1
+    - AUTHOR_TESTING=1
     - AUTOMATED_TESTING=1
-    - RELEASE_TESTING=0
-
+    - RELEASE_TESTING=1
 before_install:
   - git clone git://github.com/travis-perl/helpers ~/travis-perl-helpers
   - source ~/travis-perl-helpers/init
@@ -32,4 +31,4 @@ install:
 script:
   - perl Makefile.PL
   - make
-  - prove -b -r -s -j1 $(test-files)
+  - prove -b -r -s -j$(test-jobs) $(test-files)
