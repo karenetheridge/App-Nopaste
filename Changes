@@ -1,6 +1,8 @@
 Revision history for App-Nopaste
 
 {{$NEXT}}
+        - amended instructions in App::Nopaste::Service::Gist regarding
+          creating a gist authorization token
 
 1.012   2018-07-08 03:56:39Z
         - add GitLab service
