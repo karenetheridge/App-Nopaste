@@ -2,6 +2,7 @@ addons:
   apt:
     packages:
       - aspell
+      - aspell-en
 language: perl
 perl:
   - "5.26"
