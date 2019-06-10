@@ -68,7 +68,7 @@ __END__
 
 =pod
 
-=for stopwords dir
+=for stopwords dir Kevin Falcone Thomas Sibley
 
 =head1 ENVIRONMENT VARIABLES
 

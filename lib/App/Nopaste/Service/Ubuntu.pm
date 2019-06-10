@@ -239,7 +239,7 @@ __END__
 
 =pod
 
-=for stopwords Niebur
+=for stopwords Niebur gregor herrmann
 
 =head1 AUTHOR
 

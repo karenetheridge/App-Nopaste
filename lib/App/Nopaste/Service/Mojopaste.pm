@@ -47,7 +47,7 @@ __END__
 =pod
 
 =for :header
-=for stopwords mojopaste
+=for stopwords mojopaste Dean Hamstead
 
 =head1 USAGE
 
