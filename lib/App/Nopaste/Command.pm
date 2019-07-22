@@ -115,7 +115,10 @@ sub run {
 
     if ($self->copy) {
         use_module('Clipboard')->import;
-        Clipboard->copy($url);
+        eval {
+            Clipboard->copy_to_all_selections($url);
+            1;
+        } or Clipboard->copy($url);
     }
 
     if ($self->open_url) {
