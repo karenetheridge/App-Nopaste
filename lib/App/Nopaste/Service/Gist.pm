@@ -3,7 +3,7 @@ use warnings;
 package App::Nopaste::Service::Gist;
 # ABSTRACT: Service provider for GitHub gist - http://gist.github.com/
 
-our $VERSION = '1.013';
+our $VERSION = '1.014';
 
 use parent 'App::Nopaste::Service';
 
